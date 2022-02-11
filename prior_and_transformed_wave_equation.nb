@@ -1,0 +1,614 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     19297,        604]
+NotebookOptionsPosition[     17281,        564]
+NotebookOutlinePosition[     17679,        580]
+CellTagsIndexPosition[     17636,        577]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["The solution of the original equation is given below:", "Text",
+ CellChangeTimes->{{3.850929385858961*^9, 
+  3.8509294192170773`*^9}},ExpressionUUID->"57cacf94-489b-458e-8fd6-\
+bc79c8cb6c31"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"a", "=."}], "\[IndentingNewLine]", 
+ RowBox[{"b", "=."}], "\[IndentingNewLine]", 
+ RowBox[{"t", "=."}], "\[IndentingNewLine]", 
+ RowBox[{"x", "=."}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Psi]", "[", 
+   RowBox[{"t_", ",", "x_"}], "]"}], " ", "=", " ", 
+  SuperscriptBox["\[ExponentialE]", 
+   RowBox[{
+    RowBox[{"-", "a"}], "*", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"b", "+", "t", "-", 
+       RowBox[{"Log", "[", 
+        RowBox[{"1", "-", "x"}], "]"}]}], ")"}], "^", 
+     "2"}]}]]}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{3.850927332867917*^9},
+ CellLabel->"In[2]:=",ExpressionUUID->"e08370bf-8458-4d66-beb5-fc747ceda641"],
+
+Cell[BoxData[
+ SuperscriptBox["\[ExponentialE]", 
+  RowBox[{
+   RowBox[{"-", "a"}], " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"b", "+", "t", "-", 
+      RowBox[{"Log", "[", 
+       RowBox[{"1", "-", "x"}], "]"}]}], ")"}], "2"]}]]], "Output",
+ CellChangeTimes->{{3.8509273356340218`*^9, 3.8509273597439404`*^9}, 
+   3.8509279620888557`*^9, 3.850928151414543*^9, 3.850928247437289*^9, 
+   3.850930355795628*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"c3aab391-8bb1-4225-bb85-b00862351ef4"]
+}, Open  ]],
+
+Cell["We can see this solves the initial equation:", "Text",
+ CellChangeTimes->{{3.850929425825911*^9, 
+  3.850929447971243*^9}},ExpressionUUID->"aed0380d-0440-448b-9ec1-\
+0ca66f4a3c9c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"-", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", "x"}], ")"}]}], "*", 
+    RowBox[{
+     SubscriptBox["\[PartialD]", 
+      RowBox[{"{", 
+       RowBox[{"t", ",", "2"}], "}"}]], " ", 
+     RowBox[{"\[Psi]", "[", 
+      RowBox[{"t", ",", "x"}], "]"}]}]}], " ", "+", " ", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "-", 
+      RowBox[{"2", 
+       RowBox[{"x", "^", "2"}]}]}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      SubscriptBox["\[PartialD]", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "1"}], "}"}]], " ", 
+      RowBox[{
+       SubscriptBox["\[PartialD]", 
+        RowBox[{"{", 
+         RowBox[{"t", ",", "1"}], "}"}]], " ", 
+       RowBox[{"\[Psi]", "[", 
+        RowBox[{"t", ",", "x"}], "]"}]}]}], ")"}]}], " ", "+", " ", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "-", "x"}], ")"}], "*", 
+    RowBox[{"x", "^", "2"}], "*", 
+    RowBox[{
+     SubscriptBox["\[PartialD]", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "2"}], "}"}]], " ", 
+     RowBox[{"\[Psi]", "[", 
+      RowBox[{"t", ",", "x"}], "]"}]}]}], "-", 
+   RowBox[{"2", "x", "*", 
+    RowBox[{
+     SubscriptBox["\[PartialD]", 
+      RowBox[{"{", 
+       RowBox[{"t", ",", "1"}], "}"}]], " ", 
+     RowBox[{"\[Psi]", "[", 
+      RowBox[{"t", ",", "x"}], "]"}]}]}], "+", 
+   RowBox[{"x", 
+    RowBox[{"(", 
+     RowBox[{"2", "-", 
+      RowBox[{"3", "x"}]}], ")"}], "*", 
+    RowBox[{
+     SubscriptBox["\[PartialD]", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "1"}], "}"}]], 
+     RowBox[{"\[Psi]", "[", 
+      RowBox[{"t", ",", "x"}], "]"}]}]}]}], "//", "Simplify"}]], "Input",
+ CellChangeTimes->{{3.850927985038591*^9, 3.850928055711317*^9}, {
+  3.850929461055429*^9, 3.8509294892472897`*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"3894837d-ce52-4bf9-b14d-203488712a0a"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{
+  3.850927902321879*^9, {3.850927981505312*^9, 3.850928056123015*^9}, 
+   3.85092828178799*^9, 3.8509294897931128`*^9, 3.850930358727841*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"f78985f7-3884-429b-984c-c13100847ed4"]
+}, Open  ]],
+
+Cell["\<\
+The transformed solution will be the logarithm of \[Psi] plus a small \
+constant \[Epsilon].
+The transformed equation is \
+\>", "Text",
+ CellChangeTimes->{{3.8509301947208767`*^9, 
+  3.850930275335868*^9}},ExpressionUUID->"cadf8090-b760-40e6-b07d-\
+67646aff7fe5"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"x", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       FractionBox[
+        RowBox[{"\[PartialD]", "\[Psi]"}], 
+        RowBox[{"\[PartialD]", "x"}]], " ", 
+       RowBox[{"(", 
+        RowBox[{"2", "-", 
+         RowBox[{"3", " ", "x"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "1"}], "+", "x"}], ")"}], " ", "x", " ", 
+          FractionBox[
+           RowBox[{"\[PartialD]", "\[Psi]"}], 
+           RowBox[{"\[PartialD]", "x"}]]}]}], ")"}]}], "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "1"}], "+", "x"}], ")"}], " ", "x", " ", 
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["\[PartialD]", "2"], "\[Psi]"}], 
+        RowBox[{
+         SuperscriptBox["\[PartialD]", "2"], "x"}]]}]}], ")"}]}], "+", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", "2"}], " ", "x"}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"1", "-", 
+         RowBox[{"2", " ", 
+          SuperscriptBox["x", "2"]}]}], ")"}], " ", 
+       FractionBox[
+        RowBox[{"\[PartialD]", "\[Psi]"}], 
+        RowBox[{"\[PartialD]", "x"}]]}]}], ")"}], " ", 
+    FractionBox[
+     RowBox[{"\[PartialD]", "\[Psi]"}], 
+     RowBox[{"\[PartialD]", "t"}]]}], "-", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "+", "x"}], ")"}], " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      FractionBox[
+       RowBox[{"\[PartialD]", "\[Psi]"}], 
+       RowBox[{"\[PartialD]", "t"}]], ")"}], "2"]}], "+", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "-", 
+      RowBox[{"2", " ", 
+       SuperscriptBox["x", "2"]}]}], ")"}], " ", 
+    RowBox[{
+     FractionBox["\[PartialD]", 
+      RowBox[{"\[PartialD]", "x"}]], 
+     RowBox[{"(", 
+      RowBox[{"(", 
+       FractionBox[
+        RowBox[{"\[PartialD]", "\[Psi]"}], 
+        RowBox[{"\[PartialD]", "t"}]], ")"}], ")"}]}]}], "-", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "+", "x"}], ")"}], " ", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["\[PartialD]", "2"], "\[Psi]"}], 
+     RowBox[{
+      SuperscriptBox["\[PartialD]", "2"], "t"}]]}]}], " ", "=", " ", 
+  "0"}]], "Input",
+ CellChangeTimes->{{3.850930188389305*^9, 3.850930190013239*^9}, 
+   3.850930284471891*^9},ExpressionUUID->"50705147-583b-438f-8bbb-\
+7cdd61549bfe"],
+
+Cell["\<\
+We can see that the transformed solution satisfied this equation below.\
+\>", "Text",
+ CellChangeTimes->{{3.850930308084053*^9, 
+  3.850930330066288*^9}},ExpressionUUID->"e7ab95f5-6acb-494d-b81c-\
+94fac489e79c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"x", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[PartialD]", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", "1"}], "}"}]], 
+        RowBox[{"Log", "[", 
+         RowBox[{
+          RowBox[{"\[Psi]", "[", 
+           RowBox[{"t", ",", "x"}], "]"}], " ", "+", " ", "\[Epsilon]"}], 
+         "]"}]}], 
+       RowBox[{"(", 
+        RowBox[{"2", "-", 
+         RowBox[{"3", " ", "x"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "1"}], "+", "x"}], ")"}], " ", "x", " ", 
+          RowBox[{
+           SubscriptBox["\[PartialD]", 
+            RowBox[{"{", 
+             RowBox[{"x", ",", "1"}], "}"}]], 
+           RowBox[{"Log", "[", 
+            RowBox[{
+             RowBox[{"\[Psi]", "[", 
+              RowBox[{"t", ",", "x"}], "]"}], "+", " ", "\[Epsilon]"}], 
+            "]"}]}]}]}], ")"}]}], "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "1"}], "+", "x"}], ")"}], " ", "x", " ", 
+       RowBox[{
+        SubscriptBox["\[PartialD]", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", "2"}], "}"}]], 
+        RowBox[{"Log", "[", 
+         RowBox[{
+          RowBox[{"\[Psi]", "[", 
+           RowBox[{"t", ",", "x"}], "]"}], "+", " ", "\[Epsilon]"}], 
+         "]"}]}]}]}], ")"}]}], " ", "+", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", "2"}], " ", "x"}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"1", "-", 
+         RowBox[{"2", " ", 
+          SuperscriptBox["x", "2"]}]}], ")"}], " ", 
+       RowBox[{
+        SubscriptBox["\[PartialD]", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", "1"}], "}"}]], 
+        RowBox[{"Log", "[", 
+         RowBox[{
+          RowBox[{"\[Psi]", "[", 
+           RowBox[{"t", ",", "x"}], "]"}], "+", " ", "\[Epsilon]"}], 
+         "]"}]}]}]}], ")"}], " ", 
+    RowBox[{
+     SubscriptBox["\[PartialD]", 
+      RowBox[{"{", 
+       RowBox[{"t", ",", "1"}], "}"}]], 
+     RowBox[{"Log", "[", 
+      RowBox[{
+       RowBox[{"\[Psi]", "[", 
+        RowBox[{"t", ",", "x"}], "]"}], "+", " ", "\[Epsilon]"}], "]"}]}]}], 
+   "-", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "+", "x"}], ")"}], " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       SubscriptBox["\[PartialD]", 
+        RowBox[{"{", 
+         RowBox[{"t", ",", "1"}], "}"}]], 
+       RowBox[{"Log", "[", 
+        RowBox[{
+         RowBox[{"\[Psi]", "[", 
+          RowBox[{"t", ",", "x"}], "]"}], "+", " ", "\[Epsilon]"}], "]"}]}], 
+      ")"}], "2"]}], "+", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "-", 
+      RowBox[{"2", " ", 
+       SuperscriptBox["x", "2"]}]}], ")"}], " ", 
+    RowBox[{
+     SubscriptBox["\[PartialD]", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "1"}], "}"}]], 
+     RowBox[{"(", 
+      RowBox[{"(", 
+       RowBox[{
+        SubscriptBox["\[PartialD]", 
+         RowBox[{"{", 
+          RowBox[{"t", ",", "1"}], "}"}]], 
+        RowBox[{"Log", "[", 
+         RowBox[{
+          RowBox[{"\[Psi]", "[", 
+           RowBox[{"t", ",", "x"}], "]"}], "+", " ", "\[Epsilon]"}], "]"}]}], 
+       ")"}], ")"}]}]}], "-", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "+", "x"}], ")"}], " ", 
+    RowBox[{
+     SubscriptBox["\[PartialD]", 
+      RowBox[{"{", 
+       RowBox[{"t", ",", "2"}], "}"}]], 
+     RowBox[{"Log", "[", 
+      RowBox[{
+       RowBox[{"\[Psi]", "[", 
+        RowBox[{"t", ",", "x"}], "]"}], "+", " ", "\[Epsilon]"}], "]"}]}]}]}],
+   " ", "//", " ", "Simplify"}]], "Input",
+ CellChangeTimes->{{3.8509303733485537`*^9, 3.850930376586569*^9}, {
+  3.850930430527464*^9, 3.850930467819429*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"90dfbbdc-753f-4e88-8bb7-fab4b8ec95df"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{{3.85093035065704*^9, 3.850930377110886*^9}, 
+   3.850930469064402*^9},
+ CellLabel->"Out[12]=",ExpressionUUID->"1cce2a30-c467-4f40-86c2-d28d21545308"]
+}, Open  ]],
+
+Cell["\<\
+It is worth noting that the original solution also satisfies the transformed \
+equation.\
+\>", "Text",
+ CellChangeTimes->{{3.8509304959786987`*^9, 
+  3.850930514866622*^9}},ExpressionUUID->"04e5ca4c-a731-4550-bb3e-\
+1cb110848d2b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"x", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[PartialD]", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", "1"}], "}"}]], 
+        RowBox[{"\[Psi]", "[", 
+         RowBox[{"t", ",", "x"}], "]"}]}], " ", 
+       RowBox[{"(", 
+        RowBox[{"2", "-", 
+         RowBox[{"3", " ", "x"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "1"}], "+", "x"}], ")"}], " ", "x", " ", 
+          RowBox[{
+           SubscriptBox["\[PartialD]", 
+            RowBox[{"{", 
+             RowBox[{"x", ",", "1"}], "}"}]], 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"t", ",", "x"}], "]"}]}]}]}], ")"}]}], "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "1"}], "+", "x"}], ")"}], " ", "x", " ", 
+       RowBox[{
+        SubscriptBox["\[PartialD]", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", "2"}], "}"}]], 
+        RowBox[{"\[Psi]", "[", 
+         RowBox[{"t", ",", "x"}], "]"}]}]}]}], ")"}]}], " ", "+", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", "2"}], " ", "x"}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"1", "-", 
+         RowBox[{"2", " ", 
+          SuperscriptBox["x", "2"]}]}], ")"}], " ", 
+       RowBox[{
+        SubscriptBox["\[PartialD]", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", "1"}], "}"}]], 
+        RowBox[{"\[Psi]", "[", 
+         RowBox[{"t", ",", "x"}], "]"}]}]}]}], ")"}], " ", 
+    RowBox[{
+     SubscriptBox["\[PartialD]", 
+      RowBox[{"{", 
+       RowBox[{"t", ",", "1"}], "}"}]], 
+     RowBox[{"\[Psi]", "[", 
+      RowBox[{"t", ",", "x"}], "]"}]}]}], "-", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "+", "x"}], ")"}], " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       SubscriptBox["\[PartialD]", 
+        RowBox[{"{", 
+         RowBox[{"t", ",", "1"}], "}"}]], 
+       RowBox[{"\[Psi]", "[", 
+        RowBox[{"t", ",", "x"}], "]"}]}], ")"}], "2"]}], "+", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "-", 
+      RowBox[{"2", " ", 
+       SuperscriptBox["x", "2"]}]}], ")"}], " ", 
+    RowBox[{
+     SubscriptBox["\[PartialD]", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "1"}], "}"}]], 
+     RowBox[{"(", 
+      RowBox[{"(", 
+       RowBox[{
+        SubscriptBox["\[PartialD]", 
+         RowBox[{"{", 
+          RowBox[{"t", ",", "1"}], "}"}]], 
+        RowBox[{"\[Psi]", "[", 
+         RowBox[{"t", ",", "x"}], "]"}]}], ")"}], ")"}]}]}], "-", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "+", "x"}], ")"}], " ", 
+    RowBox[{
+     SubscriptBox["\[PartialD]", 
+      RowBox[{"{", 
+       RowBox[{"t", ",", "2"}], "}"}]], 
+     RowBox[{"\[Psi]", "[", 
+      RowBox[{"t", ",", "x"}], "]"}]}]}]}], " ", "//", " ", 
+  "Simplify"}]], "Input",
+ CellChangeTimes->{{3.85093052867173*^9, 3.850930584989778*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"12c8a173-3374-4f93-91e6-b6cede348256"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{{3.8509305343367662`*^9, 3.85093058545785*^9}},
+ CellLabel->"Out[17]=",ExpressionUUID->"be54e17b-734c-497d-9158-eace75a92758"]
+}, Open  ]],
+
+Cell["\<\
+Additionally the transformed solution also satisfies the original equation.\
+\>", "Text",
+ CellChangeTimes->{{3.850930591973255*^9, 
+  3.850930630107325*^9}},ExpressionUUID->"9c85d9da-1fc0-4919-9703-\
+d7145009ceb3"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"-", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", "x"}], ")"}]}], "*", 
+    RowBox[{
+     SubscriptBox["\[PartialD]", 
+      RowBox[{"{", 
+       RowBox[{"t", ",", "2"}], "}"}]], " ", 
+     RowBox[{"Log", "[", 
+      RowBox[{
+       RowBox[{"\[Psi]", "[", 
+        RowBox[{"t", ",", "x"}], "]"}], " ", "+", " ", "\[Epsilon]"}], 
+      "]"}]}]}], " ", "+", " ", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "-", 
+      RowBox[{"2", 
+       RowBox[{"x", "^", "2"}]}]}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      SubscriptBox["\[PartialD]", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "1"}], "}"}]], " ", 
+      RowBox[{
+       SubscriptBox["\[PartialD]", 
+        RowBox[{"{", 
+         RowBox[{"t", ",", "1"}], "}"}]], " ", 
+       RowBox[{"Log", "[", 
+        RowBox[{
+         RowBox[{"\[Psi]", "[", 
+          RowBox[{"t", ",", "x"}], "]"}], " ", "+", " ", "\[Epsilon]"}], 
+        "]"}]}]}], ")"}]}], " ", "+", " ", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "-", "x"}], ")"}], "*", 
+    RowBox[{"x", "^", "2"}], "*", 
+    RowBox[{
+     SubscriptBox["\[PartialD]", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "2"}], "}"}]], " ", 
+     RowBox[{"Log", "[", 
+      RowBox[{
+       RowBox[{"\[Psi]", "[", 
+        RowBox[{"t", ",", "x"}], "]"}], " ", "+", " ", "\[Epsilon]"}], 
+      "]"}]}]}], "-", 
+   RowBox[{"2", "x", "*", 
+    RowBox[{
+     SubscriptBox["\[PartialD]", 
+      RowBox[{"{", 
+       RowBox[{"t", ",", "1"}], "}"}]], " ", 
+     RowBox[{"Log", "[", 
+      RowBox[{
+       RowBox[{"\[Psi]", "[", 
+        RowBox[{"t", ",", "x"}], "]"}], " ", "+", " ", "\[Epsilon]"}], 
+      "]"}]}]}], "+", 
+   RowBox[{"x", 
+    RowBox[{"(", 
+     RowBox[{"2", "-", 
+      RowBox[{"3", "x"}]}], ")"}], "*", 
+    RowBox[{
+     SubscriptBox["\[PartialD]", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "1"}], "}"}]], 
+     RowBox[{"Log", "[", 
+      RowBox[{
+       RowBox[{"\[Psi]", "[", 
+        RowBox[{"t", ",", "x"}], "]"}], " ", "+", " ", "\[Epsilon]"}], 
+      "]"}]}]}]}], "//", "Simplify"}]], "Input",
+ CellChangeTimes->{{3.8509307071117697`*^9, 3.850930725269534*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"c91f8d30-9662-4357-a97a-8ce7e3a51f3c"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{3.850930725958658*^9},
+ CellLabel->"Out[18]=",ExpressionUUID->"910aba9c-d1c5-49c7-9af3-73510f18e9f4"]
+}, Open  ]]
+},
+WindowSize->{Full, Full},
+WindowMargins->{{Automatic, 0}, {Automatic, 280}},
+FrontEndVersion->"13.0 for Mac OS X x86 (64-bit) (December 2, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"98ac5f06-e764-48ed-83e4-6972dba43af2"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 197, 3, 35, "Text",ExpressionUUID->"57cacf94-489b-458e-8fd6-bc79c8cb6c31"],
+Cell[CellGroupData[{
+Cell[780, 27, 687, 18, 136, "Input",ExpressionUUID->"e08370bf-8458-4d66-beb5-fc747ceda641"],
+Cell[1470, 47, 501, 12, 38, "Output",ExpressionUUID->"c3aab391-8bb1-4225-bb85-b00862351ef4"]
+}, Open  ]],
+Cell[1986, 62, 186, 3, 35, "Text",ExpressionUUID->"aed0380d-0440-448b-9ec1-0ca66f4a3c9c"],
+Cell[CellGroupData[{
+Cell[2197, 69, 1829, 58, 33, "Input",ExpressionUUID->"3894837d-ce52-4bf9-b14d-203488712a0a"],
+Cell[4029, 129, 268, 4, 34, "Output",ExpressionUUID->"f78985f7-3884-429b-984c-c13100847ed4"]
+}, Open  ]],
+Cell[4312, 136, 273, 7, 58, "Text",ExpressionUUID->"cadf8090-b760-40e6-b07d-67646aff7fe5"],
+Cell[4588, 145, 2354, 77, 54, "Input",ExpressionUUID->"50705147-583b-438f-8bbb-7cdd61549bfe"],
+Cell[6945, 224, 221, 5, 35, "Text",ExpressionUUID->"e7ab95f5-6acb-494d-b81c-94fac489e79c"],
+Cell[CellGroupData[{
+Cell[7191, 233, 3770, 121, 57, "Input",ExpressionUUID->"90dfbbdc-753f-4e88-8bb7-fab4b8ec95df"],
+Cell[10964, 356, 198, 3, 34, "Output",ExpressionUUID->"1cce2a30-c467-4f40-86c2-d28d21545308"]
+}, Open  ]],
+Cell[11177, 362, 240, 6, 35, "Text",ExpressionUUID->"04e5ca4c-a731-4550-bb3e-1cb110848d2b"],
+Cell[CellGroupData[{
+Cell[11442, 372, 2992, 97, 34, "Input",ExpressionUUID->"12c8a173-3374-4f93-91e6-b6cede348256"],
+Cell[14437, 471, 174, 2, 34, "Output",ExpressionUUID->"be54e17b-734c-497d-9158-eace75a92758"]
+}, Open  ]],
+Cell[14626, 476, 225, 5, 35, "Text",ExpressionUUID->"9c85d9da-1fc0-4919-9703-d7145009ceb3"],
+Cell[CellGroupData[{
+Cell[14876, 485, 2237, 72, 33, "Input",ExpressionUUID->"c91f8d30-9662-4357-a97a-8ce7e3a51f3c"],
+Cell[17116, 559, 149, 2, 57, "Output",ExpressionUUID->"910aba9c-d1c5-49c7-9af3-73510f18e9f4"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
